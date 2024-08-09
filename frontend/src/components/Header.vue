@@ -15,26 +15,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import Logo from "@/assets/header-logo.svg";
-import NavLink from "@/components/NavLink.vue";
+import { defineComponent } from 'vue';
+import Logo from '@/assets/header-logo.svg';
+import NavLink from '@/components/NavLink.vue';
 
 export default defineComponent({
-  name: "NavBar",
+  name: 'NavBar',
   components: {
     NavLink,
   },
   data() {
     return {
       Logo,
-      links: [
-        { label: "Home", href: "/" },
-        { label: "About", href: "/about" },
-        { label: "Speaker", href: "/speaker" },
-        { label: "Sessions", href: "/sessions" },
-        { label: "Blogs", href: "/blogs" },
-        { label: "Sponsorships", href: "/sponsorships" },
-      ],
+      links: [{ label: 'Home', href: '/' }],
     };
   },
 });
